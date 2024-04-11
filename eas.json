@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 5.9.3"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env":{
+        "EXPO_PUBLIC_API_URL": "http://192.168.72.70:5232/"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env":{
+        "EXPO_PUBLIC_API_URL": "http://192.168.10.9:80/"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
